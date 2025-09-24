@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fractal Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="controls">
+    <h1>Fractal Visualizer</h1>
+    <label for="fractalType">Fractal:</label>
+    <select id="fractalType">
+      <option value="mandelbrot">Mandelbrot</option>
+      <option value="burningShip">Burning Ship</option>
+      <option value="phoenix">Phoenix</option>
+    </select>
+    <label for="zoomSlider">Zoom:</label>
+    <input type="range" id="zoomSlider" min="0" max="100" value="0">
+  </div>
+  <div id="coordDisplay" style="
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-family: monospace;
+  background: rgba(0,0,0,0.5);
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 10;
+">x: 0, y: 0</div>
+
+  <canvas id="fractalCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>

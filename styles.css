@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #111;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+  }
+  
+  #controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 220px;
+  }
+  
+  #controls h1 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  label {
+    font-size: 14px;
+  }
+  
+  select, input[type=range] {
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    height: 25px;
+  }
+  
+  canvas {
+    display: block;
+  }
+  
