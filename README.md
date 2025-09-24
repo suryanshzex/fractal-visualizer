@@ -28,35 +28,6 @@ A point $C$ belongs to the Mandelbrot set if the sequence $(Z_n)$ does **not** d
 
 ---
 
-### Julia Set
-
-The Julia set uses the same form as the Mandelbrot set, but with a fixed $C$, varying $Z_0$:
-
-$$
-Z_{n+1} = Z_n^2 + C
-$$
-
-Where:  
-- $C$ is a fixed complex number  
-- $Z_0$ varies across each pixel in the image (the initial point)
-
-The structure of a Julia set is highly sensitive to the value of $C$.
-
----
-
-### Burning Ship Fractal
-
-The Burning Ship fractal is defined by:
-
-$$
-Z_{n+1} = \left(|\operatorname{Re}(Z_n)| + i|\operatorname{Im}(Z_n)|\right)^2 + C
-$$
-
-Where:  
-- $\operatorname{Re}(Z_n)$ and $\operatorname{Im}(Z_n)$ are the real and imaginary parts of $Z_n$.
-
----
-
 ## How Are Fractals Rendered?
 
 For each pixel in the visualization:  
@@ -79,3 +50,19 @@ For each pixel in the visualization:
 
 ```bash
 git clone https://github.com/suryanshzex/fractal-visualizer.git
+```
+
+2. Install dependencies as needed.
+3. Run the visualizer and start exploring fractals!
+
+---
+
+## References
+
+* [Mandelbrot Set (Wikipedia)](https://en.wikipedia.org/wiki/Mandelbrot_set)
+* [Julia Set (Wikipedia)](https://en.wikipedia.org/wiki/Julia_set)
+* [Burning Ship Fractal (Wikipedia)](https://en.wikipedia.org/wiki/Burning_Ship_fractal)
+
+---
+
+Enjoy exploring the mathematics and beauty of fractals!
